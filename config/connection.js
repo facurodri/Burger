@@ -6,6 +6,7 @@ var connection;
 if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection("lmag6s0zwmcswp5w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com");
 } else {
+  console.log("Im in the else statement");
   connection = mysql.createConnection({
     host: "lmag6s0zwmcswp5w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     port: 3306,
